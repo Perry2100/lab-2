@@ -1,0 +1,26 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding-top:10px;
+}
+
+.top-center {
+    background-color: blue;
+    width: 32%;
+    height: auto;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .top-center {
+        width: 100%;
+        margin: 0;
+    }
+}

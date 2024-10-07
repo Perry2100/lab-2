@@ -1,0 +1,39 @@
+﻿* {
+    font-family: Avenir, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white; 
+}
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    margin-top: 5px;
+}
+
+.container{
+    background-color: blue;
+    width: 32%;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    float: right;
+    shape-outside: url(image.jpg);
+    margin: 5px;
+    shape-margin: 5px;
+}
+@media (max-width: 1024px) {
+    .grid-container, .container {
+        width: 100%;
+        margin: 0;
+    }
+}

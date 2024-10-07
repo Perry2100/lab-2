@@ -1,0 +1,53 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section {
+    background-color: aqua;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: auto auto;
+    border: 1px solid green;
+}
+.nav {
+    background-color: bisque;
+   
+}
+ul{
+    
+    padding-left: 7%;
+    padding-top: 2%;
+}
+.article {
+    background-color: darkgray;
+}
+
+
+/* Медиа-запрос для экранов размером менее 768 пикселей*/
+@media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+    .container {
+        background-color: aqua;
+        height: 50px;
+    }
+    .nav {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 1em;
+    }
+    ul {
+        display: flex; /*Отображение элементов списка в строке  */
+        list-style-type: none; 
+        padding-left: 7%;
+        padding-top: 0%;
+    }
+    li {
+        margin-right: 10px; 
+    }
+}

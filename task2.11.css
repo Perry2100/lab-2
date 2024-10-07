@@ -1,0 +1,40 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin: 10px;
+    border: 1px solid green;
+}
+
+main {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 85% auto;
+    grid-template-rows: auto auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    main {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        height: 25%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}

@@ -1,0 +1,56 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin: 10px;
+    border: 2px solid green;
+}
+
+main {
+    display: flex;
+    background-color: aqua;
+}
+
+nav {
+    background-color: bisque;
+    height: 100px;
+    margin-right: 5px;
+}
+
+aside {
+    flex: 0 0 25%;
+    height: auto;
+}
+
+ul {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+article {
+    background-color: darkgray;
+    flex: 1;
+    height: auto;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 25%;
+    }
+    article {
+        height: auto;
+        width:75%;
+    }
+ }
